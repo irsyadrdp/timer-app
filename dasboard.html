@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>NETWORK COMPETITION</title>
+		<link rel="shortcut icon" href="">
+		<link rel="stylesheet"  href="css/jquery.mobile-1.4.0.min.css">
+		<link rel="stylesheet"  href="css/jquery.mobile.structure-1.4.0.min.css">
+		<script src="js/easeljs-0.7.1.min.js"></script>
+		<script src="js/preloadjs-0.4.1.min.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile-1.4.0.min.js"></script>
+		<script src="timer.js"></script>
+	</head>
+	
+	<body onkeydown="detectKey()" onload="load()">
+		<header>
+			<div class="ui-header ui-bar-inherit" data-role="header" role="banner">
+				<h1 class="ui-title" role="heading" aria-level="0">Network Competition 2017</h1>
+			</div>
+			
+		</header>
+		
+		<section>
+			<center>
+				<canvas id="konten" height="100px" width="800px" style="background-color:#B1D2E2;">
+				</canvas>
+				
+				<button id="BtStart" onclick="init()" class="ui-btn ui-icon-start ui-btn-icon-bottom">Start</button>
+			</center>
+			
+			<ul data-role="listview" data-count-theme="b" data-inset="true">
+				<!-- edit nama peserta disini!!!-->
+				<li>
+					<!-- Aditya Ghifari Pratama (SMK Negeri 1 Cimahi) -->
+					PC 01 - M A T A R A M
+					<button id="bt1" onclick="button1()" style="width:10%; diplay:block;">PC 01</button>
+					<span class="ui-li-count" id="peserta1">0</span>
+				</li>
+				<li>
+					<!-- Alfan Yogy Pratama (SMK Pasundan 2 Bandung) -->
+					PC 02 - S R I W I J A Y A
+					<button id="bt2" onclick="button2()" style="width:10%; diplay:block;">PC 02</button>
+					<span class="ui-li-count" id="peserta2">0</span>
+				</li>
+				<li>
+					<!-- Dina Dwi Handayani (SMK Negeri 1 Cimahi) -->
+					PC 03 - M A J A P A H I T
+					<button id="bt3" onclick="button3()" style="width:10%; diplay:block; z-index:1;">PC 03</button>
+					<span class="ui-li-count" id="peserta3">0</span>
+				</li>
+				<li>
+					<!-- Farid Aryadi (SMK Negeri 1 Cimahi) -->
+					PC 04 - K U T A I
+					<button id="bt4" onclick="button4()" style="width:10%; diplay:block; z-index:1;">PC 04</button>
+					<span class="ui-li-count" id="peserta4">0</span>
+				</li>
+				<li>
+					<!-- Herdisyahputra Adi Satrianugraha (SMK PU Negeri Bandung) -->
+					PC 05 - P A D J A J A R A N
+					<button id="bt5" onclick="button5()" style="width:10%; diplay:block; z-index:1;">PC 05</button>
+					<span class="ui-li-count" id="peserta5">0</span>
+				</li>
+				<li>
+					<!-- Kristian Dede Firmansyah (SMK Pasundan 2 Bandung) -->
+					PC 06 - S A M U D E R A  &nbsp;&nbsp;&nbsp;  P A S A I
+					<button id="bt6" onclick="button6()" style="width:10%; diplay:block; z-index:1;">PC 06</button>
+					<span class="ui-li-count" id="peserta6">0</span>
+				</li>
+				<li>
+					<!-- Mochamad Nurul Iman (SMK PU Negeri Bandung) -->
+					PC 07 - D E M A K
+					<button id="bt7" onclick="button7()" style="width:10%; diplay:block; z-index:1;">PC 07</button>
+					<span class="ui-li-count" id="peserta7">0</span>
+				</li>
+				<li>
+					<!-- Moehamad Rady Maulana (SMK Negeri 1 Cimahi) -->
+					PC 08 - T A R U M A N E G A R A
+					<button id="bt8" onclick="button8()" style="width:10%; diplay:block; z-index:1;">PC 08</button>
+					<span class="ui-li-count" id="peserta8">0</span>
+				</li>
+				<li>
+					<!-- Mohammad Rizqy Pratama (SMK PU Negeri Bandung) -->
+					PC 09 - S I N G A S A R I
+					<button id="bt9" onclick="button9()" style="width:10%; diplay:block; z-index:1;">PC 09</button>
+					<span class="ui-li-count" id="peserta9">0</span>
+				</li>
+				<li>
+					<!-- Rizky Muhammad (SMK Negeri 4 Bandung) -->
+					PC 10 - T I D O R E
+					<button id="bt10" onclick="button10()" style="width:10%; diplay:block; z-index:1;">PC 10</button>
+					<span class="ui-li-count" id="peserta10">0</span>
+				</li>
+			</ul>
+		</section>
+		
+		<footer>
+			<div class="ui-header ui-bar-inherit" data-role="header" role="banner">
+				<h1 class="ui-title" role="heading" aria-level="0">@DEVELOPER: PCA2016 TEAM - Dinamik 11</h1>
+			</div>
+		</footer>
+		
+	</body>
+</html>
